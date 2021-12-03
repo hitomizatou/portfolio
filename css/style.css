@@ -1,0 +1,290 @@
+/* 共通
+----------------------------------------- */
+body {
+  font-family: 'Poppins', YuGothic, 'Yu Gothic', sans-serif;
+}
+
+section {
+  padding-bottom: 230px;
+}
+
+/* HEADER
+----------------------------------------- */
+
+header {
+  position: relative;
+  display: flex;
+}
+
+.top_header {
+  background: #2f7c44;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left_yohaku {
+  width: 50px;
+  background: #619cbe;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.right_yohaku {
+  width: 50px;
+  background: #619cbe;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.g_nav {
+  display: flex;
+  transform: translateX(-15px) translateY(100px) rotate(90deg);
+}
+
+.g_nav li {
+  background-color: crimson;
+  margin: 0 10px;
+  padding: 0 10px;
+}
+
+.g_nav li a {
+  color: black;
+}
+
+
+
+/* main
+----------------------------------------------- */
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.top_photo {
+  width: 60%;
+  margin: 100px auto 0;
+  padding-bottom: 100px;
+}
+
+.midashi {
+  width: 50%;
+  text-align: center;
+  padding: 0 0 100px;
+  margin: 0 auto;
+}
+
+.midashi_text {
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+
+/* できること
+------------------------------------------------ */
+.dekirukoto_flex {
+  width: 80%;
+  min-width: 1000px;
+  height: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-between;
+  margin: 0 auto;
+}
+
+.can_plan,
+.can_design,
+.can_illust,
+.can_web {
+  width: 40%;
+}
+
+.iqon {
+  width: 180px;
+  height: 180px;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+.iqon img {
+  height: 100%;
+
+}
+
+.can_title,
+.can_subtitle {
+  text-align: center;
+}
+
+.can_subtitle {
+  padding-bottom: 40px;
+}
+
+.can_text {
+  width: 400px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+.can_midashitext {
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+
+
+/* WORKS
+------------------------------------------------ */
+
+.works_block {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.works_block:nth-of-type(4) {
+  padding-bottom: 0;
+}
+
+.works_block:nth-of-type(3),
+.works_block:nth-of-type(4) {
+  flex-direction: row-reverse;
+}
+
+
+.w_text_block,
+.w_image_block {
+  width: 35%;
+  height: 470px;
+
+}
+
+.w_text_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.w_image_block {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+
+}
+
+.text_ashirai {
+  transform: translateX(-30px);
+  padding-bottom: 10px;
+}
+
+.works_block:nth-of-type(3) .text_ashirai,
+.works_block:nth-of-type(4) .text_ashirai {
+  transform: translateX(50px);
+
+}
+
+.tensen img {
+  height: 100px;
+  padding-bottom: 40px;
+}
+
+.works_title {
+  padding-bottom: 40px;
+}
+
+.more_btn {
+  width: 100px;
+  background: black;
+  border-radius: 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.more_btn a {
+  color: white;
+  display: inline-block;
+  width: 100px;
+}
+
+
+/* about
+--------------------------------------------- */
+
+.nigaoe {
+  width: 200px;
+  height: 200px;
+  border-radius: 500px;
+  background: whitesmoke;
+  text-align: center;
+  line-height: 200px;
+  margin: 0 auto 100px;
+}
+
+.about h2,
+.about_midashi,
+.about_text {
+  width: 50%;
+  min-width: 640px;
+  margin: 0 auto;
+}
+
+.about h2 {
+  padding-bottom: 50px;
+}
+
+.about_midashi {
+  font-weight: bold;
+}
+
+.about_text {
+  padding-bottom: 30px;
+  font-size: 14px;
+
+}
+
+
+/*favorite
+--------------------------------------------- */
+.grid {
+  margin: 0 auto;
+  width: 80%;
+  display: grid;
+  /* ↓1:1:1の比率で３つ並べる */
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  gap: 10px;
+  padding-bottom: 100px;
+
+}
+
+
+
+.gotop {
+  width: 60px;
+  margin-left: auto;
+  transform: translateX(-50px) translateY(-50px);
+}
+
+
+
+
+/*footer
+--------------------------------------------- */
+
+footer {
+  background: #619cbe;
+  height: 50px;
+  text-align: center;
+  color: whitesmoke;
+}

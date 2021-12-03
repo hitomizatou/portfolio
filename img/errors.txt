@@ -1,0 +1,8 @@
+[2021-12-2 12:31:29] layer "Hitomi.Satou": Unsupported extension: satou
+[2021-12-2 12:31:29] layer " ": Expected Either a default asset specification or a layer asset specification but " " found.
+[2021-12-2 12:31:29] layer "Hitomi.tSatou": Unsupported extension: tsatou
+[2021-12-2 12:31:29] layer "Hitomi.Satou": Unsupported extension: satou
+[2021-12-2 12:31:29] layer "Hitomi.Satou": Unsupported extension: satou
+[2021-12-2 12:31:29] layer "Hitomi.Satou": Unsupported extension: satou
+[2021-12-2 12:31:29] layer "Hitomi.Satou": Unsupported extension: satou
+[2021-12-2 12:31:29] layer "Hitomi.Satou": Unsupported extension: satou

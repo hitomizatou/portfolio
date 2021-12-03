@@ -1,0 +1,219 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-size: 100%;
+  line-height: 1.8;
+  letter-spacing: 0.025em;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  background: #fff;
+  /*	font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Verdana, sans-serif;*/
+  /*    font-family: '-apple-system', 'BlinkMacSystemFont','Hiragino Sans','Hiragino Kaku Gothic ProN',"segoe ui",'游ゴシック  Medium','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;*/
+  -webkit-text-size-adjust: 100%;
+  animation: opacity 0.7s both;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  /*    padding: 0 0 1em;*/
+  padding: 0;
+  font-size: 100%;
+}
+
+th,
+td {
+  margin: 0;
+  padding: 0.5em 1em;
+  font-size: 95%;
+}
+
+dl,
+dt,
+dd {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+i, cite, em, var, address, dfn {
+  font-style: normal;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+table {
+  margin: 0;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: opacity 0.3s,
+    color 0.3s,
+    border 0.3s,
+    background 0.3s;
+}
+
+a img {
+  border: none;
+  transition: opacity 0.3s;
+}
+
+
+a:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+/*
+.touch a:hover,
+.touch a:hover img,
+.touch input:hover {
+	opacity: 1;
+}
+*/
+
+:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+input[type="submit"]::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner {
+  border: 0px;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+input[type="button"],
+input[type="text"],
+input[type="submit"],
+input[type="search"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+input, button, textarea, select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /*	width: auto;*/
+  padding: 0;
+  margin: 0;
+  /*	background:none;*/
+  border: 0;
+  outline: none;
+  max-width: none;
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* iOSでのデフォルトスタイルをリセット */
+input[type="submit"],
+input[type="text"],
+input[type="button"],
+input[type="search"],
+button {
+  border-radius: 0;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  border: none;
+  box-sizing: border-box;
+  /*	cursor: pointer;*/
+}
+
+input[type="submit"]::-webkit-search-decoration,
+input[type="button"]::-webkit-search-decoration {
+  display: none;
+}
+
+input[type="submit"]::focus,
+input[type="button"]::focus {
+  outline-offset: -2px;
+}
+
+select {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+optgroup {
+  font-style: normal;
+}
+
+
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+
+@media screen and (max-width: 767px) {
+  input::-webkit-input-placeholder {
+    font-size: 0.75em;
+  }
+
+  input:-ms-input-placeholder {
+    font-size: 0.75em;
+  }
+
+  input:-moz-placeholder {
+    font-size: 0.75em;
+  }
+}
