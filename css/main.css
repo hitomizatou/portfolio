@@ -22,9 +22,9 @@ section {
 /* HEADER
 ----------------------------------------- */
 
-header {
+.header {
   position: relative;
-  display: flex;
+  /* display: flex; */
 }
 
 .top_header {
@@ -61,6 +61,7 @@ header {
   z-index: -1;
 }
 
+
 @media (max-width: 767px) {
 
   .left_yohaku,
@@ -75,21 +76,28 @@ header {
 
 .g_nav {
   display: flex;
-  transform: translateY(100px) rotate(90deg);
+  background-color: crimson;
+  position: fixed;
+  /* top: 0;
+  left: 0;
+  transform: translateX(-250px) translateY(400px) rotate(90deg); */
+  top: 400px;
+  left: -250px;
+  transform: rotate(90deg);
+
+
 }
 
 .g_nav li {
 
   margin: 0 10px;
   padding: 0 10px;
-  /* 日本語が改行されてしまうので、これをした */
-  white-space: nowrap;
+
 }
 
 .g_nav li a {
   color: black;
 }
-
 
 
 /* main
@@ -339,6 +347,125 @@ footer {
   text-align: center;
   color: whitesmoke;
 }
+
+
+/*index.html cssアニメーション設定
+------------------------------------------------------------------ */
+
+/* 各ブロックの.image-boxがふわっと現れるアニメーション */
+
+.imageBox {
+  opacity: 0;
+}
+
+.fadeUp {
+  animation-name: fadeUpAnime;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* 文字が左から出現するアニメーション */
+
+.slide-in {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.slide-in_inner {
+  display: inline-block;
+
+}
+
+
+/*左右のアニメーション*/
+.leftAnime {
+  opacity: 0;
+  /*事前に透過0にして消しておく*/
+}
+
+.slideAnimeLeftRight {
+  animation-name: slideTextX100;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes slideTextX100 {
+  from {
+    transform: translateX(-100%);
+    /*要素を左の枠外に移動*/
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    /*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+
+.slideAnimeRightLeft {
+  animation-name: slideTextX-100;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+
+@keyframes slideTextX-100 {
+  from {
+    transform: translateX(100%);
+    /*要素を右の枠外に移動*/
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    /*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+
+
+/* 画像の拡大アニメーション */
+
+.zoomIn img {
+  transform: scale(1);
+  transition: .3s ease-in-out;
+  /*移り変わる速さを変更したい場合はこの数値を変更*/
+}
+
+.zoomIn a:hover img {
+  /*hoverした時の変化*/
+  transform: scale(1.2);
+  opacity: 0.7;
+  /*拡大の値を変更したい場合はこの数値を変更*/
+}
+
+/*　画像のマスク　*/
+
+.mask {
+  display: block;
+  line-height: 0;
+  /*行の高さを0にする*/
+  overflow: hidden;
+  /*拡大してはみ出る要素を隠す*/
+}
+
 
 
 

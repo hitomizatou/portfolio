@@ -16,13 +16,13 @@
 
 
   <link rel="stylesheet" href="css/element.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
 
 </head>
 
 <body>
 
-  <header>
+  <header class="header" id="header">
 
     <!-- <nav>
       <ul class="g_nav">
@@ -59,10 +59,17 @@
 
     <section class="dekirukoto" id="dekirukoto">
       <h1 class="midashi"><img src="img/can_header.png" alt="できること見出し"></h1>
-      <p class="midashi_text">「ゼロ」から考え、「カタチ」にするまで、まるごと、やります。</p>
 
-      <div class="dekirukoto_flex">
-        <div class="can_plan">
+      <p class="midashi_text">
+        <span class="slide-in leftAnime">
+          <span class="slide-in_inner leftAnimeInner">
+            「ゼロ」から考え、「カタチ」にするまで、まるごと、やります。
+          </span>
+        </span>
+      </p>
+
+      <div class="dekirukoto_flex ">
+        <div class="can_plan imageBox">
           <h2 class="can_title">企画</h2>
           <p class="can_subtitle">planning</p>
           <p class="iqon">
@@ -79,7 +86,7 @@
           </div><!-- /can_text -->
         </div><!-- /can_plan -->
 
-        <div class="can_design">
+        <div class="can_design imageBox">
           <h2 class="can_title">デザイン</h2>
           <p class="can_subtitle">design</p>
           <p class="iqon">
@@ -94,13 +101,13 @@
           </div><!-- /can_text -->
         </div><!-- /can_design -->
 
-        <div class="can_illust">
+        <div class="can_illust imageBox">
           <h2 class="can_title">イラスト</h2>
           <p class="can_subtitle">illust</p>
           <p class="iqon">
             <img src="img/illust_illust.png" alt="イラスト">
           </p>
-          <div class="can_text">
+          <div class="can_text ">
             <p class="can_midashitext">ipadを使った、シンプルなデジタルイラストも描きます。
             </p>
             <p>
@@ -109,7 +116,7 @@
           </div><!-- /can_text -->
         </div><!-- /can_illust -->
 
-        <div class="can_web">
+        <div class="can_web imageBox">
           <h2 class="can_title">WEB</h2>
           <p class="can_subtitle">WEB SITE</p>
           <p class="iqon">
@@ -133,7 +140,15 @@
     <section class="works" id="works">
 
       <h1 class="midashi"><img src="img/WORKS_header.png" alt="WORKS見出し"></h1>
-      <p class="midashi_text">今まで、こんなことをやってきました。</p>
+
+      <p class="midashi_text">
+        <span class="slide-in leftAnime">
+          <span class="slide-in_inner leftAnimeInner">
+            今まで、こんなことをやってきました。
+          </span>
+        </span>
+      </p>
+
 
       <div class="works_block">
         <div class="w_text_block">
@@ -142,9 +157,11 @@
           <div class="tensen"><img src="img/line.png" alt="点線"></div>
           <p class="more_btn"><a href="list.html">more!</a></p>
         </div><!-- /w_text_block -->
-        <div class="w_image_block">
-          <p class="works_image"><a href="detail.html"><img src="img/kikaku_1.jpg" alt="企画1"></a></p>
-          <p class="works_image"><a href="#"><img src="img/kikaku_2.jpg" alt="企画2"></a></p>
+        <div class="w_image_block imageBox">
+          <p class="works_image zoomIn"><a href="detail.html"><span class="mask"><img src="img/kikaku_1.jpg"
+                  alt="企画1"></span></a></p>
+          <p class="works_image zoomIn"><a href="#"><span class="mask"><img src="img/kikaku_2.jpg" alt="企画2"></span></a>
+          </p>
         </div><!-- /w_image_block -->
       </div><!-- /works_block -->
 
@@ -155,9 +172,12 @@
           <div class="tensen"><img src="img/line.png" alt="点線"></div>
           <p class="more_btn"><a href="#">more!</a></p>
         </div><!-- /w_text_block -->
-        <div class="w_image_block">
-          <p class="works_image"><a href="#"><img src="img/design_1.jpg" alt="デザイン1"></a></p>
-          <p class="works_image"><a href="#"><img src="img/design_2.jpg" alt="デザイン2"></a></p>
+        <div class="w_image_block imageBox">
+          <p class="works_image zoomIn"><a href="#"><span class="mask"><img src="img/design_1.jpg"
+                  alt="デザイン1"></span></a></p>
+
+          <p class="works_image zoomIn"><a href="#"><span class="mask"><img src="img/design_2.jpg"
+                  alt="デザイン2"></span></a></p>
         </div><!-- /w_image_block -->
       </div><!-- /works_block -->
 
@@ -168,9 +188,12 @@
           <div class="tensen"><img src="img/line.png" alt="点線"></div>
           <p class="more_btn"><a href="#">more!</a></p>
         </div><!-- /w_text_block -->
-        <div class="w_image_block">
-          <p class="works_image"><a href="#"><img src="img/illust_1.jpg" alt="イラスト1"></a></p>
-          <p class="works_image"><a href="#"><img src="img/illust_2.jpg" alt="イラスト2"></a></p>
+        <div class="w_image_block imageBox">
+
+          <p class="works_image zoomIn"><a href="#"><span class="mask"><img src="img/illust_1.jpg"
+                  alt="イラスト1"></span></a></p>
+          <p class="works_image zoomIn"><a href="#"><span class="mask"><img src="img/illust_2.jpg"
+                  alt="イラスト2"></span></a></p>
         </div><!-- /w_image_block -->
       </div><!-- /works_block -->
 
@@ -181,9 +204,11 @@
           <div class="tensen"><img src="img/line.png" alt="点線"></div>
           <p class="more_btn"><a href="#">more!</a></p>
         </div><!-- /w_text_block -->
-        <div class="w_image_block">
-          <p class="works_image"><a href="#"><img src="img/web_1.jpg" alt="WEB1"></a></p>
-          <p class="works_image"><a href="#"><img src="img/web_2.jpg" alt="WEB2"></a></p>
+        <div class="w_image_block imageBox">
+          <p class="works_image zoomIn"><a href="#"><span class="mask"><img src="img/web_1.jpg" alt="WEB1"></span></a>
+          </p>
+          <p class="works_image zoomIn"><a href="#"><span class="mask"><img src="img/web_2.jpg" alt="WEB2"></span></a>
+          </p>
         </div><!-- /w_image_block -->
       </div><!-- /works_block -->
     </section><!-- /works -->
@@ -191,7 +216,15 @@
     <section class="about" id="about">
       <h1 class="midashi"><img src="img/about_header.png" alt="about見出し"></h1>
       <div class="nigaoe"><img src="img/about.png" alt="プロフィール写真"></div>
-      <h2>佐藤　瞳　HITOMI SATO</h2>
+
+      <h2>
+        <span class="slide-in leftAnime">
+          <span class="slide-in_inner leftAnimeInner">
+            佐藤　瞳　HITOMI SATO
+          </span>
+        </span>
+      </h2>
+
       <p class="about_midashi">広告制作会社で、10年以上プランナーをしていました。</p>
       <p class="about_text">
         新卒で入社した博報堂プロダクツ。プランナー職としてコミニュケーションプランや、プロモーションプランを10年以上考えてきました。規模感は、数百万円のものから数億円のものまで。期間は、単発のものから、年間プランまで。業界や商材もさまざまで、本当に多岐に渡ります。毎日企画書を作って、プレゼンもたくさんしてきました。
@@ -209,8 +242,16 @@
 
     <section class="favorite" id="favorite">
       <h1 class="midashi"><img src="img/favorite_header.png" alt="favorite見出し"></h1>
-      <p class="midashi_text">好きな世界観の写真やイラスト、集めました。</p>
-      <div class="grid">
+
+      <p class="midashi_text">
+        <span class="slide-in leftAnime">
+          <span class="slide-in_inner leftAnimeInner">
+            好きな世界観の写真やイラスト、集めました。
+          </span>
+        </span>
+      </p>
+
+      <div class="grid imageBox">
         <div class="item"><img src="img/love01.jpg" alt="favorite写真"></div>
         <div class="item"><img src="img/love02.jpg" alt="favorite写真"></div>
         <div class="item"><img src="img/love03.jpg" alt="favorite写真"></div>
@@ -222,7 +263,7 @@
 
     </section><!-- /favorite -->
 
-    <div class="gotop"><a href="#"><img src="img/gototop.png" alt="トップへ戻る"></a></div>
+    <div class="gotop"><a href="#header"><img src="img/gototop.png" alt="トップへ戻る"></a></div>
 
   </main>
 
@@ -230,6 +271,13 @@
     <small>Copyright © 2021 HITOMI SATO. All Rights Reserved.</small>
   </footer>
 
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- 自作js -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>
